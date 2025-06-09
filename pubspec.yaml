@@ -1,0 +1,18 @@
+name: touch_to_expand_container
+description: "A container that maintains a single/continuous child instance while expanded, which Overlay widget in Flutter doesn't and cannot. All UX-oriented customizables are API-supported."
+version: 0.1.0
+homepage: https://github.com/Chleosl/touch_to_expand_container
+repository: https://github.com/Chleosl/touch_to_expand_container
+
+environment:
+  sdk: ^3.7.2
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0

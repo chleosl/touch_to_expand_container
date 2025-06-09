@@ -1,0 +1,10 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  language:
+    strict-raw-types: true
+
+linter:
+  rules:
+    require_trailing_commas: true
+    avoid_unnecessary_containers: true

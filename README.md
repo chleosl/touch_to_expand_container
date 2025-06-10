@@ -46,6 +46,7 @@ the `TouchToExpandContainer` is literal a 'container'; it locates at a specific 
 | handlebarOffset | Offset | No | Offset for the handle position relative to the expanded container location |
 | barrierColor | Color | No | The color of the modal barrier that appears behind expanded containers |
 | isScrollActivated | bool | No | Whether scrolling the background is allowed when this container is expanded |
+| key | Key | no | I added a method to expand and collapse specific `TouchToExpandContainer` using `<yourKey>.currentState?.expand()` in the wrapper. pro tip: or you can collapse whatever container expanded using State Classes |
 
 Of course you can just give only w/h and child. It just magically works like that.
 

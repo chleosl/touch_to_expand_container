@@ -873,13 +873,15 @@ class TouchToExpandContainer extends StatefulWidget {
   });
 
   @override
-  State<TouchToExpandContainer> createState() => _TouchToExpandContainerState();
+  State<TouchToExpandContainer> createState() => TouchToExpandContainerState();
 }
 
-class _TouchToExpandContainerState extends State<TouchToExpandContainer> {
+class TouchToExpandContainerState extends State<TouchToExpandContainer> {
   final LayerLink _layerLink = LayerLink();
   late final GlobalKey _key = GlobalKey();
   TouchToExpandOverlayState? _overlayState;
+
+  bool get isExpanded => _overlayState?._expandedTargetKey == _key;
 
   @override
   void initState() {
@@ -887,6 +889,14 @@ class _TouchToExpandContainerState extends State<TouchToExpandContainer> {
     WidgetsBinding.instance.addPostFrameCallback((_) {
       _updateTargetData();
     });
+  }
+
+  void expand() {
+    _overlayState?.expand(_key);
+  }
+  
+  void collapse() {
+    _overlayState?.collapse();
   }
 
   @override

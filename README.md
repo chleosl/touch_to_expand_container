@@ -1,28 +1,29 @@
-# TouchToExpandContainer
+# A Single Widget instance Overlay: TouchToExpandContainer
 
-A container that maintains a single/continuous child instance while expanded (in every expanded and collapsed state), which `Overlay` widget in vanilla flutter doesn't and cannot, by placing 'targeter' - `TouchToExpandContainer` widget in wherever specific widget tree and rendering the real contents in the background 'wrapper' by connecting both using `CompositedTransformTarget` and `CompositedTransformFollower` Widgets. like Hunter-Killer tactics in military term. the `TouchToExpandContainer` set and receives all the properties and specifics like location, child, decoration, behavior when expanded etc, then the `TouchToExpandOverlayWrapper` wrapper 'deploys' the displaying agent with all the propertes/set it received.
+An expandable container that maintains a **single/continuous** child **instance** while expanded (in every expanded and collapsed state), which `Overlay` widget in vanilla flutter doesn't and cannot, by placing 'targeter' - `TouchToExpandContainer` widget in wherever specific widget tree and rendering real contents in the background 'wrapper' by connecting both using `CompositedTransformTarget` and `CompositedTransformFollower` Widgets. like Hunter-Killer tactics in military term. the `TouchToExpandContainer` sets and receives all the properties and specifics like location, child, decoration, behavior when expanded etc, then the `TouchToExpandOverlayWrapper` wrapper 'deploys' the displaying agent with all the propertes/set it have and received.
 
-A package for UX-Oriented programmers. Vertical Integrations are important and it's accomplished by single instance maintaining architecture, that manages attention focus cycle.
+A really good choice for UX-Oriented programmers. Vertical Integrations are important - which accomplished by single instance maintaining architecture that manages the attention focus cycle of user.
 
 Huge credit to **Claude** and **Anthropic PBC**; I learned Dart and Flutter very fast with the help of Claude, and this code is the result of architecture designed by me, and content/code written by Claude Opus 4 and Me.
 
-**Zero Dependencies**: I only used `import 'package:flutter/material.dart';`. I mean, the package *`portal`* was really suck and it really don't just satisfy me.
-
+**Zero Dependencies**: I used only `import 'package:flutter/material.dart';`.
 
 ## Usage
 
-1. single/continuous child instance preview container and overlay
-2. a PC GUI-like window or similar product
+1. a container with preview of Overlay, that is continuous with single and continuous child instance.
+2. a PC GUI-like window or similar product.
 
 ## Demonstration/Showcase
 
-implement the GIF and image and code sniffet here
+implement the GIF and image and code sniffets here
 
 ## How to use
 
-wrapper could be placed 'within' the scrollable widgets like `SingleChildScrollView` or `PageView` if you want to maintain and align the screen effects with scrollable context, or place it at the top level in your widget trees on one specific 'page'. I don't recommend it to implement on the root level of your app, It's just NOT UX-oriented. it should be 'comply and integrated' with the surroundal contexts of your widgets, i.e 'scrollable' or 'in a group seems like it's column'. that's the key essence and Idea-Value of the UX-orientative.
+wrapper could be placed 'inside' the scrollable widgets like `SingleChildScrollView` or `PageView` if you want to maintain and align the screen effects with scrollable contexts within, or place it at the top level in your widget trees on the one specific 'page'. I don't recommend it to put it on the root level of your app, It's just NOT UX-oriented. it should be 'comply and integrated' with the surroundal contexts of your widgets, i.e 'scrollable' or 'that group seems like a column'. that's the key essence and Idea-Value of the UX-orientative.
 
-the container could be literal 'containter' concept in the flutter; it locates at a specific widget tree where you write and place it, then it shows the child widget you gave it. the thing is, your child widget maintains its instance as a single instance pattern, unlike any overlays but more like 'expandable container' which only the window frame is what moving on. the `TouchToExpandContainer` receives parameters of:
+the `TouchToExpandContainer` is literal a 'container'; it locates at a specific widget tree where you write and place it, then shows the child widget you gave it.
+
+ the `TouchToExpandContainer` receives parameters of:
 
 | Parameter | *Type* | Required | Description |
 |-----------|------|----------|-------------|

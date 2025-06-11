@@ -1,0 +1,24 @@
+name: touch_to_expand_container_example
+description: "A demonstration purpose showcase app for touch_to_expand_container package."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_map: ^8.1.1
+  latlong2: ^0.9.1
+  touch_to_expand_container:
+    path: ../
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  assets:
+    - ../images/

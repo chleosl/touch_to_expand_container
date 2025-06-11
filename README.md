@@ -2,7 +2,7 @@
 
 An expandable container that maintains a **single/continuous** child **instance** while expanded (in every expanded and collapsed state), which **`Overlay`** widget in vanilla flutter doesn't and cannot, by placing 'targeter' - `TouchToExpandContainer` widget in wherever specific widget tree and rendering real contents in the background 'wrapper' by connecting both using `CompositedTransformTarget` and `CompositedTransformFollower` Widgets. like Hunter-Killer tactics in military term. the `TouchToExpandContainer` sets and receives all the properties and specifics like location, child, decoration, behavior when expanded etc, then the `TouchToExpandOverlayWrapper` wrapper 'deploys' the displaying agent with all the propertes/set it have and received.
 
-A really good choice for UX-Oriented programmers. Vertical Integrations are important - which accomplished by single instance maintaining architecture that manages the attention focus cycle of user.
+A package for UX-Oriented programmers. Vertical Integrations are important - which accomplished by single instance maintaining architecture that manages the attention focus cycle of user.
 
 Huge credit to **Claude** and **Anthropic PBC**; I learned Dart and Flutter very fast with the help of Claude, and this code is the result of architecture designed by me, and content/code written by Claude Opus 4 and Me.
 

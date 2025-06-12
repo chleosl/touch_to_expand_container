@@ -22,16 +22,15 @@ dev_dependencies:
   flutter_lints: ^5.0.0
 
 topics:
- - flutter
  - ui
  - overlay
  - single-instance
- - singleton
+ - preview
  - expand
  - ux-design
  - ux-oriented
  - transform
- - preview
+ - singleton
  - overlay-preview
  - hunter-killer
 
@@ -42,3 +41,11 @@ platforms:
   windows:
   macos:
   linux:
+
+screenshots:
+  - description: 'Interactive Demo app 1'
+    path: images/demo1.webp
+  - description: 'Interactive Demo app 2'
+    path: imgaes/demo2.webp
+  - description: 'Interactive Demo app 3'
+    path: imgaes/demo3.webp

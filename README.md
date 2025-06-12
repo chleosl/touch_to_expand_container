@@ -15,7 +15,13 @@ Huge credit to **Claude** and **Anthropic PBC**; I learned Dart and Flutter very
 
 ## Demonstration/Showcase
 
-implement the GIF and image and code sniffets here
+<div align="center">
+  <iframe src="https://chleosl.github.io/touch_to_expand_container/" 
+          width="360dp" 
+          height="600dp" 
+          style="border: 1px solid #ccc; border-radius: 8px;">
+  </iframe>
+</div>
 
 ## How to use
 

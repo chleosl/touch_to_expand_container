@@ -7,7 +7,7 @@ repository: https://github.com/chleosl/touch_to_expand_container
 environment:
   sdk: ^3.7.2
   flutter: ">=1.17.0"
-# minimum requirement version not designated yet
+# minimum requirement version not discovered and designated yet
 
 dependencies:
   flutter:

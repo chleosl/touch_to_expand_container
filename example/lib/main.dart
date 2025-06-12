@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:touch_to_expand_container/touch_to_expand_container.dart';
 import 'panels/map_placeholder.dart';
+
 void main() {
   runApp(const DemoApp());
 }
@@ -13,12 +14,12 @@ class DemoApp extends StatefulWidget {
 }
 
 class DemoAppState extends State<DemoApp> {
-  double widgetHeight = 200;
-  double widgetWidth = 200;
-  double widgetExpandHeight = 390;
-  double widgetExpandWidth = 350;
-  double expandedOffsetX = 0;
-  double expandedOffsetY = 0;
+  double widgetHeight2 = 200;
+  double widgetWidth2 = 200;
+  double widgetExpandHeight2 = 390;
+  double widgetExpandWidth2 = 350;
+  double expandedOffsetX2 = 0;
+  double expandedOffsetY2 = 0;
   bool showBarrier2 = true;
   bool showBarrier5 = true;
   final container2Key = GlobalKey<TouchToExpandContainerState>();
@@ -199,13 +200,13 @@ class DemoAppState extends State<DemoApp> {
                       SizedBox(height: 86),
 
                       TouchToExpandContainer(
-                        width: widgetWidth,
-                        height: widgetHeight,
-                        expandedWidth: widgetExpandWidth,
-                        expandedHeight: widgetExpandHeight,
+                        width: widgetWidth2,
+                        height: widgetHeight2,
+                        expandedWidth: widgetExpandWidth2,
+                        expandedHeight: widgetExpandHeight2,
                         expandedOffset: Offset(
-                          expandedOffsetX,
-                          expandedOffsetY,
+                          expandedOffsetX2,
+                          expandedOffsetY2,
                         ),
                         showBarrier: showBarrier2,
                         key: container2Key,
@@ -249,7 +250,7 @@ class DemoAppState extends State<DemoApp> {
                                                             .start,
                                                     children: [
                                                       Text(
-                                                        'Expanded Width: ${widgetExpandWidth.toStringAsFixed(0)}',
+                                                        'Expanded Width: ${widgetExpandWidth2.toStringAsFixed(0)}',
                                                         style: TextStyle(
                                                           fontSize: 11,
                                                         ),
@@ -258,7 +259,7 @@ class DemoAppState extends State<DemoApp> {
                                                         height: 30,
                                                         child: Slider(
                                                           value:
-                                                              widgetExpandWidth,
+                                                              widgetExpandWidth2,
                                                           min: 200,
                                                           max: (MediaQuery.of(
                                                                     context,
@@ -270,7 +271,7 @@ class DemoAppState extends State<DemoApp> {
                                                               ),
                                                           onChanged: (value) {
                                                             setState(() {
-                                                              widgetExpandWidth =
+                                                              widgetExpandWidth2 =
                                                                   value;
                                                             });
                                                           },
@@ -287,7 +288,7 @@ class DemoAppState extends State<DemoApp> {
                                                             .start,
                                                     children: [
                                                       Text(
-                                                        'Expanded Height: ${widgetExpandHeight.toStringAsFixed(0)}',
+                                                        'Expanded Height: ${widgetExpandHeight2.toStringAsFixed(0)}',
                                                         style: TextStyle(
                                                           fontSize: 11,
                                                         ),
@@ -296,7 +297,7 @@ class DemoAppState extends State<DemoApp> {
                                                         height: 30,
                                                         child: Slider(
                                                           value:
-                                                              widgetExpandHeight,
+                                                              widgetExpandHeight2,
                                                           min: 200,
                                                           max: (MediaQuery.of(
                                                                         context,
@@ -310,7 +311,7 @@ class DemoAppState extends State<DemoApp> {
                                                               ),
                                                           onChanged: (value) {
                                                             setState(() {
-                                                              widgetExpandHeight =
+                                                              widgetExpandHeight2 =
                                                                   value;
                                                             });
                                                           },
@@ -331,7 +332,7 @@ class DemoAppState extends State<DemoApp> {
                                                             .start,
                                                     children: [
                                                       Text(
-                                                        'Offset X: ${expandedOffsetX.toStringAsFixed(0)}',
+                                                        'Offset X: ${expandedOffsetX2.toStringAsFixed(0)}',
                                                         style: TextStyle(
                                                           fontSize: 11,
                                                         ),
@@ -340,12 +341,12 @@ class DemoAppState extends State<DemoApp> {
                                                         height: 30,
                                                         child: Slider(
                                                           value:
-                                                              expandedOffsetX,
+                                                              expandedOffsetX2,
                                                           min: -200,
                                                           max: 200,
                                                           onChanged: (value) {
                                                             setState(() {
-                                                              expandedOffsetX =
+                                                              expandedOffsetX2 =
                                                                   value;
                                                             });
                                                           },
@@ -362,7 +363,7 @@ class DemoAppState extends State<DemoApp> {
                                                             .start,
                                                     children: [
                                                       Text(
-                                                        'Offset Y: ${expandedOffsetY.toStringAsFixed(0)}',
+                                                        'Offset Y: ${expandedOffsetY2.toStringAsFixed(0)}',
                                                         style: TextStyle(
                                                           fontSize: 11,
                                                         ),
@@ -371,12 +372,12 @@ class DemoAppState extends State<DemoApp> {
                                                         height: 30,
                                                         child: Slider(
                                                           value:
-                                                              expandedOffsetY,
+                                                              expandedOffsetY2,
                                                           min: -200,
                                                           max: 200,
                                                           onChanged: (value) {
                                                             setState(() {
-                                                              expandedOffsetY =
+                                                              expandedOffsetY2 =
                                                                   value;
                                                             });
                                                           },
@@ -402,7 +403,7 @@ class DemoAppState extends State<DemoApp> {
                       Padding(
                         padding: EdgeInsets.symmetric(
                           horizontal: 14,
-                          vertical: widgetHeight / 6,
+                          vertical: widgetHeight2 / 6,
                         ),
                         child: LayoutBuilder(
                           builder: (context, constraints) {
@@ -421,15 +422,15 @@ class DemoAppState extends State<DemoApp> {
                                             CrossAxisAlignment.start,
                                         children: [
                                           Text(
-                                            'Width: ${widgetWidth.toStringAsFixed(0)}',
+                                            'Width: ${widgetWidth2.toStringAsFixed(0)}',
                                           ),
                                           Slider(
-                                            value: widgetWidth,
+                                            value: widgetWidth2,
                                             min: 50,
                                             max: 300,
                                             onChanged: (value) {
                                               setState(() {
-                                                widgetWidth = value;
+                                                widgetWidth2 = value;
                                               });
                                             },
                                           ),
@@ -442,15 +443,15 @@ class DemoAppState extends State<DemoApp> {
                                             CrossAxisAlignment.start,
                                         children: [
                                           Text(
-                                            'Height: ${widgetHeight.toStringAsFixed(0)}',
+                                            'Height: ${widgetHeight2.toStringAsFixed(0)}',
                                           ),
                                           Slider(
-                                            value: widgetHeight,
+                                            value: widgetHeight2,
                                             min: 50,
                                             max: 300,
                                             onChanged: (value) {
                                               setState(() {
-                                                widgetHeight = value;
+                                                widgetHeight2 = value;
                                               });
                                             },
                                           ),
@@ -469,15 +470,15 @@ class DemoAppState extends State<DemoApp> {
                                             CrossAxisAlignment.start,
                                         children: [
                                           Text(
-                                            'Expanded Width: ${widgetExpandWidth.toStringAsFixed(0)}',
+                                            'Expanded Width: ${widgetExpandWidth2.toStringAsFixed(0)}',
                                           ),
                                           Slider(
-                                            value: widgetExpandWidth,
+                                            value: widgetExpandWidth2,
                                             min: 200,
                                             max: maxExpandedWidth,
                                             onChanged: (value) {
                                               setState(() {
-                                                widgetExpandWidth = value;
+                                                widgetExpandWidth2 = value;
                                               });
                                             },
                                           ),
@@ -490,15 +491,15 @@ class DemoAppState extends State<DemoApp> {
                                             CrossAxisAlignment.start,
                                         children: [
                                           Text(
-                                            'Expanded Height: ${widgetExpandHeight.toStringAsFixed(0)}',
+                                            'Expanded Height: ${widgetExpandHeight2.toStringAsFixed(0)}',
                                           ),
                                           Slider(
-                                            value: widgetExpandHeight,
+                                            value: widgetExpandHeight2,
                                             min: 200,
                                             max: maxExpandedHeight,
                                             onChanged: (value) {
                                               setState(() {
-                                                widgetExpandHeight = value;
+                                                widgetExpandHeight2 = value;
                                               });
                                             },
                                           ),
@@ -517,15 +518,15 @@ class DemoAppState extends State<DemoApp> {
                                             CrossAxisAlignment.start,
                                         children: [
                                           Text(
-                                            'Offset X: ${expandedOffsetX.toStringAsFixed(0)}',
+                                            'Offset X: ${expandedOffsetX2.toStringAsFixed(0)}',
                                           ),
                                           Slider(
-                                            value: expandedOffsetX,
+                                            value: expandedOffsetX2,
                                             min: -200,
                                             max: 200,
                                             onChanged: (value) {
                                               setState(() {
-                                                expandedOffsetX = value;
+                                                expandedOffsetX2 = value;
                                               });
                                             },
                                           ),
@@ -538,15 +539,15 @@ class DemoAppState extends State<DemoApp> {
                                             CrossAxisAlignment.start,
                                         children: [
                                           Text(
-                                            'Offset Y: ${expandedOffsetY.toStringAsFixed(0)}',
+                                            'Offset Y: ${expandedOffsetY2.toStringAsFixed(0)}',
                                           ),
                                           Slider(
-                                            value: expandedOffsetY,
+                                            value: expandedOffsetY2,
                                             min: -200,
                                             max: 200,
                                             onChanged: (value) {
                                               setState(() {
-                                                expandedOffsetY = value;
+                                                expandedOffsetY2 = value;
                                               });
                                             },
                                           ),
@@ -806,7 +807,7 @@ class DemoAppState extends State<DemoApp> {
                       
                       Container(
                         width: 340,
-                        height: 120,
+                        height: 240,
                         alignment: Alignment.center,
                         decoration: BoxDecoration(
                           color: Theme.of(context).scaffoldBackgroundColor,
@@ -821,7 +822,7 @@ class DemoAppState extends State<DemoApp> {
                           ],
                         ),
                         child: Text(
-                          "There are also other various parameters you can play/explore with, but these are overall important parameters with it.",
+                          "There are also other important parameters you can play/explore with, but these are overall key parameters you can adjust overall while using TouchToExpandContainer package.\n\n'touch_to_expand_container' package Made by @Chleosl",
                           style: TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.w400,

@@ -4,10 +4,13 @@ version: 0.1.0
 homepage: https://github.com/chleosl/touch_to_expand_container
 repository: https://github.com/chleosl/touch_to_expand_container
 
+documentation: https://pub.dev/documentation/touch_to_expand_container/latest/
+issue_tracker: https://github.com/chleosl/touch_to_expand_container/issues
+
 environment:
   sdk: ^3.7.2
   flutter: ">=1.17.0"
-# minimum requirement version not discovered and designated yet
+# minimum requirement version not discovered or designated yet
 
 dependencies:
   flutter:
@@ -17,3 +20,25 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
+
+topics:
+ - flutter
+ - ui
+ - overlay
+ - single-instance
+ - singleton
+ - expand
+ - ux-design
+ - ux-oriented
+ - transform
+ - preview
+ - overlay-preview
+ - hunter-killer
+
+platforms:
+  android:
+  ios:
+  web:
+  windows:
+  macos:
+  linux:

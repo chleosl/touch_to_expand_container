@@ -22,17 +22,11 @@ dev_dependencies:
   flutter_lints: ^5.0.0
 
 topics:
- - ui
  - overlay
  - single-instance
  - preview
  - expand
- - ux-design
- - ux-oriented
- - transform
  - singleton
- - overlay-preview
- - hunter-killer
 
 platforms:
   android:

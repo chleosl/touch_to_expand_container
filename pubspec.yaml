@@ -4,9 +4,6 @@ version: 0.1.0
 homepage: https://github.com/chleosl/touch_to_expand_container
 repository: https://github.com/chleosl/touch_to_expand_container
 
-documentation: https://pub.dev/documentation/touch_to_expand_container/latest/
-issue_tracker: https://github.com/chleosl/touch_to_expand_container/issues
-
 environment:
   sdk: ^3.7.2
   flutter: ">=1.17.0"

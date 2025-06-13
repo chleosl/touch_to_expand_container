@@ -27,6 +27,19 @@ Huge credit to **Claude** and **Anthropic PBC**; I learned Dart and Flutter very
   </a>
 </p>
 
+All this acheived by:
+```dart
+SingleChildScrollView - or something any fancy widget you want (
+    TouchToExpandOverlayWrapper(
+      // anywhere in the widget tree..
+        TouchToExpandContainer(
+            h/w
+            child: MapView(),
+        ),
+    ),
+),
+```
+
 ### Try The demo yourself
 
 🎮 **[Interactive Demo](https://chleosl.github.io/touch_to_expand_container/)** (or click the video above!)

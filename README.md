@@ -27,7 +27,7 @@ Huge credit to **Claude** and **Anthropic PBC**; I learned Dart and Flutter very
   </a>
 </p>
 
-### Try This demo yourself
+### Try The demo yourself
 
 🎮 **[Interactive Demo](https://chleosl.github.io/touch_to_expand_container/)** (or click the video above!)
 

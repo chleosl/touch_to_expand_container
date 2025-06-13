@@ -1,4 +1,3 @@
-
 /// An expandable container that maintains a single/continuous child instance while expanded (in every expanded and collapsed state), which [Overlay] widget in vanilla flutter doesn't and cannot, by placing 'targeter' - [TouchToExpandContainer] widget in wherever specific widget tree you want and rendering real contents in the background 'wrapper' by connecting both using [CompositedTransformTarget] and [CompositedTransformFollower] Widgets. like Hunter-Killer tactics in military term. the [TouchToExpandContainer] sets and receives all the properties and specifics of the Overlay and Conatiner like location, child, decorations, behavior when expanded etc, and [TouchToExpandOverlayWrapper] wrapper 'deploys' or 'renders' it with all the propertes it set and have.
 
 // Huge credit to Claude and Anthropic PBC; I learned Dart and Flutter very fast with the help of Claude, and this code is the result of architecture designed by me, and content/code written by Claude Opus 4 and Me.
@@ -894,7 +893,7 @@ class TouchToExpandContainerState extends State<TouchToExpandContainer> {
   void expand() {
     _overlayState?.expand(_key);
   }
-  
+
   void collapse() {
     _overlayState?.collapse();
   }

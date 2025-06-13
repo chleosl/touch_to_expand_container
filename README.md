@@ -15,6 +15,12 @@ Huge credit to **Claude** and **Anthropic PBC**; I learned Dart and Flutter very
 
 ## Demonstration/Showcase
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/chleosl/touch_to_expand_container/main/images/demo1.webp" width="28%" />
+  <img src="https://raw.githubusercontent.com/chleosl/touch_to_expand_container/main/images/demo2.webp" width="28%" />
+  <img src="https://raw.githubusercontent.com/chleosl/touch_to_expand_container/main/images/demo3.webp" width="28%" />
+</p>
+
 ### Try it yourself
 
 🎮 **[Interactive Demo](https://chleosl.github.io/touch_to_expand_container/)**

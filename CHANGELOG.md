@@ -1,3 +1,9 @@
+## 0.1.1
+
+* Updated README with images and better documentation
+* removed some URLs in pubspec
+* added a breif roadmap in source code
+
 ## 0.1.0
 
 * Initial release

@@ -8,6 +8,8 @@ library touch_to_expand_container;
 
 import 'package:flutter/material.dart';
 
+// TODO - the major update roadmap: in 0.2.0, make the isAbsolutePositioned option available.
+
 class CustomHandle {
   final void Function(Canvas canvas, Size size) drawFunction;
   final Size handleSize;

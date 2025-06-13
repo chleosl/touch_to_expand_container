@@ -16,14 +16,20 @@ Huge credit to **Claude** and **Anthropic PBC**; I learned Dart and Flutter very
 ## Demonstration/Showcase
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/chleosl/touch_to_expand_container/main/images/demo1.webp" width="28%" />
-  <img src="https://raw.githubusercontent.com/chleosl/touch_to_expand_container/main/images/demo2.webp" width="28%" />
-  <img src="https://raw.githubusercontent.com/chleosl/touch_to_expand_container/main/images/demo3.webp" width="28%" />
+  <a href="https://chleosl.github.io/touch_to_expand_container/">
+    <img src="https://raw.githubusercontent.com/chleosl/touch_to_expand_container/main/images/demo1.webp" width="29%" />
+  </a>
+  <a href="https://chleosl.github.io/touch_to_expand_container/">
+    <img src="https://raw.githubusercontent.com/chleosl/touch_to_expand_container/main/images/demo2.webp" width="29%" />
+  </a>
+  <a href="https://chleosl.github.io/touch_to_expand_container/">
+    <img src="https://raw.githubusercontent.com/chleosl/touch_to_expand_container/main/images/demo3.webp" width="29%" />
+  </a>
 </p>
 
-### Try it yourself
+### Try This demo yourself
 
-🎮 **[Interactive Demo](https://chleosl.github.io/touch_to_expand_container/)**
+🎮 **[Interactive Demo](https://chleosl.github.io/touch_to_expand_container/)** (or click the video above!)
 
 ## How to use
 

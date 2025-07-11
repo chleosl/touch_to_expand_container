@@ -530,6 +530,7 @@ class TouchToExpandOverlayState extends State<TouchToExpandOverlayWrapper>
                       }
                     }
 
+                    // the actual TouchToExpandContainer
                     Widget containerWidget = Stack(
                       children: [
                         Container(
@@ -541,7 +542,7 @@ class TouchToExpandOverlayState extends State<TouchToExpandOverlayWrapper>
                                       _defaultExpandedDecoration)
                                   : (data.decoration ?? _defaultDecoration),
                           clipBehavior: Clip.antiAlias,
-                          child: ExpandedStateProvider(
+                          child: ExpandedStateProvider( // 여기에다가 이제 저 GestureDetector를 넣어서 내부 위젯의 배경이 스크롤되거나 눌려도 배경은 움직이지 않도록 하는거지
                             isExpanded: animValue > 0.5,
                             animationValue: animValue,
                             currentWidth: currentWidth,
